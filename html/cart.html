@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+<!-- header section starts -->
+<header class="header">
+    <a href="../index.html" class="logo"><i class="fas fa-store"></i> shopie </a>
+    
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="./cart.html" class="fas fa-shopping-cart"></a>
+        <a href="./administer.html" class="fas fa-chart-bar"></a>
+    </div>
+</header>
+<!-- header section ends -->
+
+<!-- side-bar section starts -->
+<div class="side-bar">
+
+    <div id="close-side-bar" class="fas fa-times"></div>
+
+    <div class="user">
+        <img src="../images/user-img.png" alt="">
+        <h3>your name</h3>
+        <a href="">log out</a>
+    </div>
+
+    <nav class="header-navbar">
+        <a href="../index.html"><i class="fas fa-angle-right"></i> home </a>
+        <a href="./cart.html"><i class="fas fa-angle-right"></i> cart </a>
+        <a href="./administer.html"><i class="fas fa-angle-right"></i> administer </a>
+    </nav>
+
+</div>
+<!-- side-bar section ends -->
+
+
+<!-- shopping cart section starts  -->
+
+<section class="shopping-cart">
+
+    <h1 class="heading">your <span>products</span></h1>
+
+    <div class="box-container" id="renderCart">
+
+        <!-- <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../images/product-1.jpg" alt="">
+            <div class="content">
+                <h3>smartphone</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <span class="caculator-list">
+                        <div class="caculator-item">
+                            <div class="caculator-btn" onclick="caculatorDeincrease()">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                            <p id="caculator-result"></p>
+                            <div class="caculator-btn" onclick="caculatorIncrease()">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </span>
+                </form>
+                <div class="price">1000$</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../images/product-2.jpg" alt="">
+            <div class="content">
+                <h3>camera</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">1000$</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../images/product-3.jpg" alt="">
+            <div class="content">
+                <h3>television</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">1000$</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../images/product-4.jpg" alt="">
+            <div class="content">
+                <h3>speaker</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">1000$</div>
+            </div>
+        </div> -->
+
+    </div>
+        <div class="cart-total">
+            <h3> total : <span id="idMoney"></span> </h3>
+            <div class="cart__wrap">
+                <a href="#" class="shopie__btn" id="btnPayment">Purchase
+                    <i class="fa-solid fa-money-check"></i>
+                </a>
+                <a href="#" class="shopie__btn-delete" id="btnPaymentDelete">Clear Cart
+                    <i class="fa-solid fa-trash"></i>
+                </a>
+            </div>
+
+        </div>
+        
+  
+
+</section>
+
+<!-- shopping cart section ends -->
+
+
+
+
+
+    
+
+<!-- footer section starts -->
+
+<section class="quick-links">
+    <a href="../index.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+    <div class="links">
+        <a href="../index.html"> home </a>
+        <a href="./cart.html"> cart </a>
+        <a href="./administer.html"> administer </a>
+    </div>
+
+    <div class="share">
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-linkedin"></a>
+    </div>
+</section>
+
+<section class="credit">
+    <p> created by <span>nhóm 3</span> | all rights reserved |</p>
+
+    <img src="../images/card_img.png" alt="">
+</section>
+
+
+<!-- footer section ends -->
+
+ <!-- JQUERY -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+ integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+ crossorigin="anonymous"></script>
+
+ <!-- SWEET ALERT -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+    <!-- swiper js link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="../js/controllers/handle-layout.js"></script>
+    <!-- <script type="module" src="../js/controllers/main.js"></script> -->
+    <script type="module" src="../js/controllers/cart.js"></script>
+    <!-- <script type="module" src="../js/controllers/main.js"></script> -->
+</body>
+</html>
